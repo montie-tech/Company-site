@@ -99,6 +99,7 @@
      -moz-border-radius: 4em / 5em;
      -ms-border-radius: 4em / 5em;
      -o-border-radius: 4em / 5em;
+     font-size:18px;
  }
  
  #border:hover {
