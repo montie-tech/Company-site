@@ -7,12 +7,12 @@
  a {
      padding-right: 20px;
      text-decoration: none;
-     font-size: 20px;
+     font-size: 18px;
      color: white;
  }
  
  .glow {
-     font-size: 80px;
+     font-size: 30px;
      color: black;
      text-align: center;
      animation: glow 1s ease-in-out infinite alternate;
@@ -51,7 +51,7 @@
  
  h1 {
      font-family: Verdana, Geneva, Tahoma, sans-serif;
-     font-size: 30px;
+     font-size: 20px;
      text-align: center;
      padding: 10px;
  }
@@ -72,19 +72,19 @@
  }
  
  h2 {
-     font-size: 70px;
+     font-size: 20px;
      color: aliceblue;
      text-align: center;
  }
  
  h3 {
-     font-size: 50px;
+     font-size: 20px;
      color: antiquewhite;
      text-align: center;
  }
  
  h4 {
-     font-size: 30px;
+     font-size: 180px;
      color: black;
      text-align: center;
  }
@@ -106,7 +106,7 @@
  }
  
  p {
-     font-size: 25px;
+     font-size: 18px;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
  
@@ -133,7 +133,7 @@
      padding-right: 10px;
      margin-right: 10px;
      margin-left: 10px;
-     font-size: 25px;
+     font-size: 18px;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
  
@@ -145,7 +145,7 @@
      background-color: grey;
      background-size: cover;
      text-align: center;
-     font-size: 20px;
+     font-size: 18px;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
 @media only screen and (min-width: 600px) {
