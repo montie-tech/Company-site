@@ -16,7 +16,7 @@
      color: black;
      text-align: center;
      animation: glow 5s ease-in-out infinite alternate;
-     padding-top: 30px;
+     padding-top: 50px;
  }
  
  @-webkit-keyframes glow {
