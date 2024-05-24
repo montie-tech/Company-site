@@ -182,8 +182,10 @@
   .col-12 {width: 100%;}
 }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (width: 320px-480px) {...}{
-   header {
+
+@media screen and (max-device-width: 480px) 
+    and (orientation: portrait) 
+    header {
      background-color: antiquewhite scroll no-repeat bottom;
      padding: 2px;
      background-size: cover;
@@ -320,4 +322,4 @@
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
 }
-
+}
