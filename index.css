@@ -195,4 +195,6 @@
   #main {margin-left: 216px;}
  
 }
+ @media (min-width: 651px) { body { min-width: 1228px } body.mobileV { min-width: initial } }
+
  
