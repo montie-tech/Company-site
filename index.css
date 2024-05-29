@@ -182,19 +182,5 @@
   .col-12 {width: 100%;}
 }
 /* Extra small devices (phones, 600px and down) */
-@media screen and (min-width: 480px) {
-  .navbar {
-     width: 200px; float: left;
-     background-color: white;
-     background-size: cover;
-     width: 100px;
-     /* padding-left: 0px; */
-     text-align: left;
-     padding-left: 3px;
-   }
-  #main {margin-left: 216px;}
- 
-}
- 
 
  
