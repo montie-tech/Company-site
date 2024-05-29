@@ -1,44 +1,71 @@
-/* index.css */
-
-
-/* Reset some basic styles */
-
-body,
-h2,
-h3,
-h4,
-p,
-ol,
-li,
-footer {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-}
-
-
-/* Basic body styling */
-
-body {
-    padding: 20px;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-
-/* Header and Navbar styling */
-
-h1 {
-    background-color: #0044cc;
-    color: #fff;
+header {
+    background-color: antiquewhite scroll no-repeat bottom;
+    background-size: cover;
     padding: 20px 0;
     text-align: center;
 }
 
+a {
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.glow {
+    font-size: 80px;
+    color: black;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px grey, 0 0 40px white, 0 0 50px grey, 0 0 60px grey, 0 0 70px white;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px white, 0 0 40px grey, 0 0 50px black, 0 0 60px black, 0 0 70px black, 0 0 80px black;
+    }
+}
+
+a:hover {
+    color: black;
+}
+
+.navbar {
+    /* padding: 10px;
+ margin-right: 10px; */
+    background-color: white;
+    background-size: cover;
+    width: 100%;
+    /* padding-left: 0px; */
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-origin: content-box;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
 h1 img {
-    max-width: 50px;
-    vertical-align: middle;
     position: absolute;
     top: 0;
     left: 0;
@@ -53,169 +80,80 @@ h1 img {
     -webkit-border-radius: white;
 }
 
-}
-
-header {
-    display: inline-block;
-    font-size: 1.5rem;
-    margin: 0;
-    background-color: antiquewhite scroll no-repeat bottom;
-    background-size: cover;
-    padding: 20px 0;
+h2 {
+    font-size: 70px;
+    color: aliceblue;
     text-align: center;
 }
 
-.navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-    margin: 10px 0;
-    font-size: 1.2rem;
-}
-
- a:hover {
-   color: black;
-}
-
-
-
-/* Main content styling */
-
-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-origin: content-box;
-    font-size: 1.5rem;
-    margin-top: 20px;
-}
-
-#animate-area {
+h3 {
+    font-size: 50px;
+    color: antiquewhite;
     text-align: center;
-}
-
-.glow {
-    color: #0044cc;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-section h3 {
-    font-size: 1.5rem;
-    margin-top: 20px;
 }
 
 h4 {
-    font-size: 1.2rem;
-    margin-top: 20px;
-}
-
-p {
-    margin: 20px 0;
-    text-align: justify;
-}
-
-ol {
-    list-style: none;
-    padding-left: 0;
-}
-
-ol li {
-    background-color: #0044cc;
-    color: #fff;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    font-size: 30px;
+    color: black;
+    text-align: center;
 }
 
 #border {
-    border-bottom: 2px solid #fff;
-    padding-bottom: 3px;
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 4em / 5em;
+    background-color: grey;
+    -webkit-border-radius: 4em / 5em;
+    -moz-border-radius: 4em / 5em;
+    -ms-border-radius: 4em / 5em;
+    -o-border-radius: 4em / 5em;
+}
+
+#border:hover {
+    background-color: black;
+    color: white;
+}
+
+p {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 90%;
+    }
+}
+
+#animate-area {
+    width: 100%;
+    height: 1000px;
+    background-image: url("w2.jpeg");
+    background-size: cover;
+    animation: animatedBackground 5s linear infinite alternate;
+    -webkit-animation: animatedBackground 5s linear infinite alternate;
+}
+
+ol,
+li {
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li:hover {
+    color: white;
 }
 
 footer {
-    background-color: #0044cc;
-    color: #fff;
+    background-color: grey;
+    background-size: cover;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
-}
-
-footer br {
-    margin-bottom: 10px;
-}
-
-
-/* Media Queries for responsiveness */
-
-@media (min-width: 600px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    header h1 {
-        font-size: 2rem;
-    }
-    header img {
-        max-width: 70px;
-    }
-    .navbar a {
-        font-size: 1rem;
-    }
-    main {
-        padding: 40px;
-    }
-    section h2 {
-        font-size: 2.5rem;
-    }
-    section h3 {
-        font-size: 2rem;
-    }
-    h4 {
-        font-size: 1.5rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    .navbar {
-        justify-content: space-between;
-    }
-    header h1 {
-        font-size: 2.5rem;
-    }
-    header img {
-        max-width: 80px;
-    }
-    .navbar a {
-        font-size: 1.2rem;
-    }
-    main {
-        padding: 60px;
-    }
-    section h2 {
-        font-size: 3rem;
-    }
-    section h3 {
-        font-size: 2.5rem;
-    }
-    h4 {
-        font-size: 1.8rem;
-    }
-    ol li {
-        font-size: 1.2rem;
-    }
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
